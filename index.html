@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tjee Fashion Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 80px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            letter-spacing: 4px;
+        }
+        
+        /* Navigation Menu Bar */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover, nav a.active {
+            background-color: #25d366;
+            border-radius: 6px;
+        }
+
+        /* Page Content Visibility Control */
+        .page-content {
+            display: none; /* Hides all pages by default */
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .page-content.active-page {
+            display: block; /* Shows only the active page */
+        }
+
+        /* Product Grid Display */
+        .products-grid {
+            display: grid;
+            grid-template-columns: (auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #EAF6F6;
+            border: 5px solid #222;
+            border-radius: 6px;
+            padding: 1px;
+            text-align: center;
+            box-shadow: 4 4px 5px rgba(0, 0, 0, 0)
+        }
+        .card {
+            width: 40%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 100px;
+            margin: 0 auto 10px auto;
+            display: block;   
+
+        }
+        .card img {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .card h3 {
+            margin: 15px 0 20px;
+            font-size: 15px;
+        }
+        .price {
+            color: #b12704;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 7px 7px;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
+
+        /* Contact Page Styles */
+        .contact-box {
+            background: #EAF6F6;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding:20;
+            background-color: #222;
+            color: #F0F8FF;
+            margin-top:500px;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <header>
+        <h1>TJEE FASHION CLOTHING</h1>
+        <p>Your Ultimate Style Destination</p>
+    </header>
+
+    <!-- Navigation Bar Links -->
+    <nav>
+        <p>Your Ultimate Style Destination</p>
+        <a onclick="showPage('home-page')" id="nav-home-page"class="active">Home</a>
+        <a onclick="showPage('clothing-page')" id="nav-clothing-page">Clothing Store</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="form.html">Register Now</a>
+    </nav>
+
+    <!-- 1. HOME PAGE CONTENT -->
+    <div id="home-page" class="page-content active-page">
+        <h2>Welcome to Tjee Fashion Clothing!</h2>
+        <p>Discover trendsetting style collections made just for you. Explore our clothing store or contact us directly for styling advice.</p>
+        <img src="c:\Users\ALI ABDULKADIR\Downloads\5428504b-f10b-4fca-9303-e22c4cdf1533.jpg" alt="Fashion Store Banner" style="width:100%; border-radius:8px; height:400px; object-fit:cover;">
+    </div>
+
+    <!-- 2. CLOTHING STORE PAGE CONTENT -->
+    <div id="clothing-page" class="page-content">
+        <h2>Our Fashion Catalog</h2>
+        <h3>Effortlee Style Ready to Wear Pick Your oder</h3>
+        <div class="products-grid">
+             
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\22495947-9f5b-4f8d-9fa1-f47d1e7e8084.jpg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Premium Soft Cashmere</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦25,000</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\fa360a1e-0a39-4e1d-a844-aaeaf911121d.jpg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>Plain Yard With 100% Quality</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦27,650</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\download (3).jpg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Clean Sky Yard</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦22,500</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\620022a0-b3ec-4061-8a3f-1f1e454a49c9.jpg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>Cashmere</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦23,000</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+   
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\download (1).jpg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Geizner</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦28,700</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\images.jpg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>Sharp style</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦28,300</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Pictures\image style.jpeg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Geizner</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦28,700</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Pictures\image 2026 .jpeg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>Plain style</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦28,300</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Pictures\WhatsApp Image 2026-09-24 at 11.18.58 PM.jpeg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Hight quality,durable materials</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦26,900</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Downloads\1ea77257-e74b-42bc-a8d9-ca00d34f0fa7.jpg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>No Waiting for tailors-unbox and wear</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦30,000</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+   
+           <!-- Product 3 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Pictures\WhatsApp Image 2026-09-24 at 11.19.09 PM.jpeg" alt="Casual T-Shirt">
+                <h2>Ready-Made</h2>
+                <h3>Best Ready-Made outfit</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦25,500</div>
+                <a class="whatsapp-btn" href="https://wa.me₦15,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="c:\Users\ALI ABDULKADIR\Pictures\WhatsApp Image 2026-09-24 at 11.19.01 PM.jpeg" alt="Denim Jacket">
+                <h2>Ready-Made</h2>
+                <h3>Ready to Wear</h3>
+                <div class="Available">Available in all color</div>
+                <div class="price">₦29,000</div>
+                <a class="whatsapp-btn" href="https://wa.me₦35,000." target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+   
+    <footer>
+        <p>&copy; 2026 Tjee Fashion Clothing. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Swap Pages Instantly -->
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            let pages = document.getElementsByClassName('page-content');
+            for (let i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active-page');
+            }
+            
+            // Remove active highlighting from all nav menu links
+            let navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Show current page and highlight current nav link
+            document.getElementById(pageId).classList.add('active-page');
+            document.getElementById('nav-' + pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
